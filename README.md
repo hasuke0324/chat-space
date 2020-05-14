@@ -7,16 +7,15 @@
 |-----|----|-------|
 |name|string|null: false, index: :true|
 ### Association
-- has_many :groups
+- has_many :group_users
+- has_many :groups, through: :group_users
 - has_many :messages
 
 ## groupsテーブル
 |Colum|Type|Options|
 |-----|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :user
 - has_many :messages
 - has_many :group_users
 - has_many :users, through: :group_users
