@@ -1,0 +1,37 @@
+.chat
+  .main-header
+    .main-header__name
+      %h2.main-header__name__group
+        group name
+      %ul.main-header__name__member
+        Member :&nbsp;
+        %li.main-header__name__member-list
+        name
+    .main-header__btn
+      =link_to "#", class: "edit-btn" do
+        Edit
+  .message-list
+    .message
+      .message__box
+        %p.message__box__name
+          name
+        %p.message__box__time
+          2020/05/19(Thu)17:43:01
+      .message__text
+        new_message
+    .message
+      .message__box
+        %p.message__box__name
+          name
+        %p.message__box__time
+          2020/05/19(Thu)17:43:01
+      .message__text
+        new_message
+  .form
+    %form.new__message
+      .type-box
+        %input{type: "text", class: "type-box__text", placeholder: "type a message"}
+        %label{class: "type-box__image"}
+          =icon('fas', "image")
+          %input{type: "file", class: "type-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}

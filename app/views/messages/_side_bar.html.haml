@@ -1,0 +1,23 @@
+.side-bar
+  .header
+    .header__box
+      .header__box__name
+        name
+      %ul.header__box__lists
+        %li.list
+          =link_to "#", class: "btn" do
+            = icon('fa', 'edit')
+        %li.list
+          =link_to "#", class: "btn" do
+            = icon('fa', 'cog')
+  .group-list
+    .group
+      .group__name
+        group-name
+      .group__message
+        new-message
+    .group
+      .group__name
+        group-name
+      .group__message
+        new-message
