@@ -1,10 +1,10 @@
 .side-bar {
   width: 300px;
   height: 100vh;
-  background-color: #253141;
+  background-color: $side_blue_dark;
   float: left;
   .header {
-    background-color: #253141;
+    background-color: $side_blue_dark;
     height: 100px;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@
     }
   }
   .group-list {
-    background-color: #2f3e51;
+    background-color: $side_blue_light;
     height: calc(100vh - 100px);
     .group {
       height: 91px;

@@ -1,15 +1,15 @@
 .side-bar
   .header
     .header__box
-      .header__box__name
-        name
+      %h3.header__box__name
+        = current_user.name
       %ul.header__box__lists
         %li.list
-          =link_to "#", class: "btn" do
-            = icon('fa', 'edit')
+          =link_to do
+            = icon('fa', 'edit', class: 'btn')
         %li.list
-          =link_to "#", class: "btn" do
-            = icon('fa', 'cog')
+          =link_to edit_user_path(current_user) do
+            = icon('fa', 'cog', class: 'btn')
   .group-list
     .group
       .group__name
