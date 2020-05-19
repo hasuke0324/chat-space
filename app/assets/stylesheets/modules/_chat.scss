@@ -61,7 +61,7 @@
       }
     }
     .message__text {
-      color: #434A54;
+      color: $black;
       font-size: 14px;
     }
   }
@@ -78,7 +78,7 @@
         &__text {
           height: 50px;
           width: 100%;
-          color: #434a54;
+          color: $black;
           padding-left: 10px;
           border-style: none;
           position: relative;
