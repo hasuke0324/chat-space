@@ -38,6 +38,14 @@
   .group-list {
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
+    a:visited {
+      color: $white;
+      text-decoration: none;
+    }
+    a:link {
+      color: $white;
+      text-decoration: none;
+    }
     .group {
       height: 91px;
       padding: 20px;
