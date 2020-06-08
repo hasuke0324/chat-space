@@ -19,12 +19,15 @@
   }
 
   .account-page__header {
+    a {
+      text-decoration: none;
+    }
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
-
+      color: #000;
       &:after {
         content: '';
         display: block;
@@ -139,3 +142,5 @@
     font-size: 13px;
   }
 }
+
+
